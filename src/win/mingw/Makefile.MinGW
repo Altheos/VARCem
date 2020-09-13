@@ -8,7 +8,7 @@
 #
 #		Makefile for Windows systems using the MinGW32 environment.
 #
-# Version:	@(#)Makefile.mingw	1.0.94	2020/09/09
+# Version:	@(#)Makefile.mingw	1.0.95	2020/09/10
 #
 # Author:	Fred N. van Kempen, <decwiz@yahoo.com>
 #
@@ -704,7 +704,7 @@ SYSOBJ		:= clk.o dma.o nmi.o pic.o pit.o ppi.o pci.o mca.o \
 CHIPOBJ		:= neat.o scat.o headland.o \
 		    acc2168.o ali1429.o opti495.o sis471.o sis496.o \
 		    wd76c10.o intel4x0.o \
-			sl82c460.o
+			sl82c460.o vl82c480.o
 
 MCHOBJ		:= machine.o machine_table.o \
 		    m_xt.o \
