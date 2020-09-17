@@ -8,7 +8,7 @@
 #
 #		Makefile for Windows systems using the MinGW32 environment.
 #
-# Version:	@(#)Makefile.mingw	1.0.97	2020/09/11
+# Version:	@(#)Makefile.mingw	1.0.98	2020/09/15
 #
 # Author:	Fred N. van Kempen, <decwiz@yahoo.com>
 #
@@ -656,6 +656,11 @@ ifeq ($(DEV_BRANCH), y)
  ifeq ($(ARTI), y)
   OPTS		+= -DUSE_ARTISOFT
   DEVBROBJ	+= net_arti2m.o
+ endif
+
+ ifeq ($(SYMPHONY), y)
+  OPTS		+= -DUSE_SL
+  DEVBROBJ	+= m_sl82c460.o
  endif
 
 endif

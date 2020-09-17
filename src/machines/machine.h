@@ -8,7 +8,7 @@
  *
  *		Handling of the emulated machines.
  *
- * Version:	@(#)machine.h	1.0.35	2020/02/12
+ * Version:	@(#)machine.h	1.0.36	2020/09/15
  *
  * Authors:	Fred N. van Kempen, <decwiz@yahoo.com>
  *		Miran Grca, <mgrca8@gmail.com>
@@ -190,6 +190,10 @@ extern const device_t	m_opti495_486_award;
 extern const device_t	m_opti495_386sx_mr;
 extern const device_t	m_opti495_386dx_mr;
 extern const device_t	m_opti495_486_mr;
+
+#if defined(DEV_BRANCH) && defined(USE_SL)
+extern const device_t	m_sl82c460_386dx_ami;
+#endif
 
 #if defined(DEV_BRANCH) && defined(USE_SIS471)
 extern const device_t	m_sis471_ami;

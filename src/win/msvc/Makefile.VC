@@ -8,7 +8,7 @@
 #
 #		Makefile for Windows using Visual Studio 2015.
 #
-# Version:	@(#)Makefile.VC	1.0.81	2020/09/11
+# Version:	@(#)Makefile.VC	1.0.82	2020/09/15
 #
 # Author:	Fred N. van Kempen, <decwiz@yahoo.com>
 #
@@ -576,6 +576,11 @@ ifeq ($(DEV_BRANCH), y)
   DEVBROBJ	+= net_arti2m.obj
  endif
 
+ifeq ($(SYMPHONY), y)
+  OPTS		+= -DUSE_SL
+  DEVBROBJ	+= m_sl82c460.obj
+ endif
+
 endif
 
 
@@ -634,7 +639,7 @@ MCHOBJ		:= machine.obj machine_table.obj \
 		    m_neat.obj m_headland.obj m_scat.obj \
 		    m_commodore.obj \
 		    m_tosh3100e.obj m_tosh3100e_vid.obj \
-		    m_ali.obj m_opti495.obj m_sis471.obj m_sis496.obj \
+		    m_ali.obj m_opti495.obj m_sis471.obj m_sis496.obj m_sl82c460.obj \
 		    m_wd76c10.obj m_intel4x0.obj \
 		    m_acer.obj m_aopen.obj m_asus.obj m_pbell.obj m_tyan.obj \
 		    m_misc.obj
