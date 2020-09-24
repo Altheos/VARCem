@@ -8,7 +8,7 @@
  *
  *		Definitions for the video controller module.
  *
- * Version:	@(#)video.h	1.0.39	2020/02/11
+ * Version:	@(#)video.h	1.0.40	2020/09/20
  *
  * Authors:	Fred N. van Kempen, <decwiz@yahoo.com>
  *		Miran Grca, <mgrca8@gmail.com>
@@ -190,6 +190,7 @@ extern const device_t	gd5426_vlb_device;
 extern const device_t	gd5428_isa_device;
 //extern const device_t ibm_gd5428_mca_device;
 extern const device_t	gd5428_vlb_device;
+extern const device_t	gd5428_onboard_vlb_device;
 extern const device_t	gd5429_isa_device;
 extern const device_t	gd5429_vlb_device;
 extern const device_t	gd5430_vlb_device;
