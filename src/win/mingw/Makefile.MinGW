@@ -8,7 +8,7 @@
 #
 #		Makefile for Windows systems using the MinGW32 environment.
 #
-# Version:	@(#)Makefile.mingw	1.0.98	2020/09/15
+# Version:	@(#)Makefile.mingw	1.0.99	2020/09/20
 #
 # Author:	Fred N. van Kempen, <decwiz@yahoo.com>
 #
@@ -730,7 +730,7 @@ MCHOBJ		:= machine.o machine_table.o \
 		    m_tosh3100e.o m_tosh3100e_vid.o \
 		    m_ali.o m_opti495.o m_sis471.o m_sis496.o \
 		    m_wd76c10.o m_intel4x0.o \
-		    m_acer.o m_aopen.o m_asus.o m_pbell.o m_tyan.o \
+		    m_acer.o m_aopen.o m_asus.o m_hp.o m_pbell.o m_tyan.o \
 		    m_misc.o
 
 DEVOBJ		:= bugger.o \

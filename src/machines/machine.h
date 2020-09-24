@@ -8,7 +8,7 @@
  *
  *		Handling of the emulated machines.
  *
- * Version:	@(#)machine.h	1.0.36	2020/09/15
+ * Version:	@(#)machine.h	1.0.37	2020/09/20
  *
  * Authors:	Fred N. van Kempen, <decwiz@yahoo.com>
  *		Miran Grca, <mgrca8@gmail.com>
@@ -234,6 +234,9 @@ extern const device_t	m_aw430vx;
 extern const device_t	m_p55va;
 extern const device_t	m_j656vxd;
 extern const device_t	m_p55t2s;
+
+/* HP machines. */
+extern const device_t	&_hpv486;
 
 /* Packard Bell machines. */
 extern const device_t	m_pb410a;
