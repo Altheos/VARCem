@@ -8,7 +8,7 @@
  *
  *		Handling of the emulated machines.
  *
- * Version:	@(#)machine_table.c	1.0.48	2020/09/20
+ * Version:	@(#)machine_table.c	1.0.49	2020/09/26
  *
  * Authors:	Fred N. van Kempen, <decwiz@yahoo.com>
  *		Miran Grca, <mgrca8@gmail.com>
@@ -139,6 +139,10 @@ static const struct {
     { "[386SX ISA] DTK 386SX clone",		"dtk_386",		&m_neat_dtk		},
     { "[386SX ISA] KMX-C-02",			"kmxc02",		&m_kmxc02		},
 
+#if defined(DEV_BRANCH)
+    { "[386SX ISA] Packard Bell Legend 300SX",	"pbell_pb300",	&m_pb300		},
+#endif    
+
     { "[386SX MCA] IBM PS/2 model 55SX",	"ibm_ps2_m55sx",	&m_ps2_m55sx		},
 
     /* 80386DX */
@@ -170,7 +174,9 @@ static const struct {
     { "[486 ISA] MR 486 (Opti495)",		"mr_486dx_opti495",	&m_opti495_486_mr	},
 
     { "[486 ISA] DTK PKM-0038S E-2",		"dtk_486",		&m_dtk486		},
+#if defined(DEV_BRANCH)    
     { "[486 ISA] HP Vectra 486 33VL",       "hp_v486",      &m_hpv486       },
+#endif    
     { "[486 ISA] Packard Bell PB410A",		"pbell_pb410a",		&m_pb410a		},
 
     { "[486 MCA] IBM PS/2 model 70 (type 4)",	"ibm_ps2_m70_type4",	&m_ps2_m70_4		},
