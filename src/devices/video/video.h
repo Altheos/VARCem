@@ -8,7 +8,7 @@
  *
  *		Definitions for the video controller module.
  *
- * Version:	@(#)video.h	1.0.40	2020/09/20
+ * Version:	@(#)video.h	1.0.41	2020/09/26
  *
  * Authors:	Fred N. van Kempen, <decwiz@yahoo.com>
  *		Miran Grca, <mgrca8@gmail.com>
@@ -252,6 +252,7 @@ extern const device_t	incolor_device;
 
 /* Hercules ColorPlus series cards and compatibles. */
 extern const device_t	colorplus_device;
+extern const device_t   colorplus_onboard_device;
 
 /* Matrox MGA series cards. */
 //extern const device_t	mystique_device;
